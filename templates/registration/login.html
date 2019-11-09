@@ -1,0 +1,15 @@
+{% extends 'maintem.html' %}
+
+  {% block title %}  Zaloguj się  {% endblock %}
+
+
+
+
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+{{form|bootstrap }}
+<button type="submit" > Login </button>
+</form>
+    {% endblock %}
+
