@@ -8,7 +8,7 @@ class Event(models.Model):
     place = models.CharField(max_length=50),
     description = models.TextField(),
     event_date = models.DateField(null=True, blank=True),
-    event_hour = models.DateTimeField()
+    event_hour = models.DateTimeField(),
     photo = models.ImageField(null=True, blank=True)
 
     def _str_(self):
